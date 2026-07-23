@@ -51,30 +51,31 @@
 
             
             <!-- Bild 1/12 -->
-                <button onclick="document.getElementById('dialog-mountains').showModal()">
+                <button onclick="openDialog(titleList[0], imgList[0], numberList[0])">
                     <img class="landingpage-image" src="./img/image-1.jpg" alt="Bild 1">
                 </button>
                 
-                <dialog class="dialog" id="dialog-mountains">
+                <dialog class="dialog" id="myDialog">
                     <header>
-                        <h2>Beautiful Mountains</h2>
+                        <h2 id="dialogTitle">Title</h2>
                         <form method="dialog">
                             <button onclick="closeDialog()">
-                            <img class="dialog-img" src="./img/close-dialog.png" alt="dialog close">  
+                              <img class="dialog-img" src="./img/close-dialog.png" alt="dialog close">  
                             </button>
                         </form>
                     </header>
                         
                     <section>
-                        <img src="img/image-1.jpg" alt="Berge">
+                        <img id="dialogImg" src="" alt="">
+
                     </section>
 
                     <footer class="dialog-footer">
-                        <button>
-                            <img class="dialog-arrow" src="./img/arrow-left.png" alt="arrow-left">
-                        </button>
-                        <p class="image-number">1/12</p>
-                        <button onclick="changeDialog('dialog-mountains', 'dialog-snow')">
+                        <button><img class="dialog-arrow" src="./img/arrow-left.png" alt="arrow-left"></button>
+
+                        <p id="dialogNumber" class="image-number">Number</p>
+
+                        <button onclick="openDialog('Beautiful Alaska', './img/image-2.jpg', '2/12')">
                             <img class="dialog-arrow" src="./img/arrow-right.png" alt="arrow-right">
                         </button>
                     </footer>
@@ -82,16 +83,16 @@
                 
             
             <!-- Bild 2/12 -->
-                <button onclick="document.getElementById('dialog-snow').showModal()">
+                <button onclick="openDialog('Beautiful Alaska', './img/image-2.jpg', '2/12')">
                     <img class="landingpage-image" src="./img/image-2.jpg" alt="Bild 1">
                 </button>
                 
-                <dialog class="dialog" id="dialog-snow">
+                <dialog class="dialog" id="myDialog">
                     <header>
-                        <h2>Beautiful Snow</h2>
+                        <h2 id="dialogTitle">Title</h2>
                         <form method="dialog">
                             <button onclick="closeDialog()">
-                            <img class="dialog-img" src="./img/close-dialog.png" alt="dialog close">  
+                              <img class="dialog-img" src="./img/close-dialog.png" alt="dialog close">  
                             </button>
                         </form>
                     </header>
@@ -101,15 +102,16 @@
                     </section>
 
                     <footer class="dialog-footer">
-                        <button onclick="changeDialog('dialog-snow', 'dialog-mountains')">
+                        <button onclick="openDialog('Beautiful Mountains', './img/image-1.jpg', '1/12')">
                             <img class="dialog-arrow" src="./img/arrow-left.png" alt="arrow-left">
                         </button>
-                        <p class="image-number">2/12</p>
-                        <button>
-                            <img class="dialog-arrow" src="./img/arrow-right.png" alt="arrow-right">
-                        </button>
+
+                        <p id="dialogNumber" class="image-number">Number</p>
+
+                        <button><img class="dialog-arrow" src="./img/arrow-right.png" alt="arrow-right"></button>
                     </footer>
-                </dialog>                           
+                </dialog>    
+         
         </section>
     </main>
 
@@ -145,6 +147,6 @@
 
 </body>
 
-    <script src="script.js"></script>
+    <script src="script test.js"></script>
 
 </html>

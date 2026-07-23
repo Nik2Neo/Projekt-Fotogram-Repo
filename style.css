@@ -28,8 +28,10 @@ main {
     background-color: #06171E;
     color: #FFFFFF;
 
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+    position: relative;
 
 }
 
@@ -37,6 +39,9 @@ h1 {
     font-size: 56px;
     font-weight: 800;
     line-height: 100%;
+
+    margin: 0;
+    padding-bottom: 80px;
 }
 
 h2 {        
@@ -58,8 +63,14 @@ main button {
     height: 150px;
     width: 150px;
 
-    
+    margin-right: 16px;
     border-radius: 16px;
+    border: 2px solid #124658;
+
+    object-fit: cover;
+    object-position: center;
+
+    aspect-ratio: 1 / 1;
 }
 
 footer {
@@ -78,21 +89,21 @@ footer {
 }
 
 .photo-album {
-    padding-top: 200px;
+    padding-top: 0px;
 }
 
 .dialog-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 48px;
+    padding-bottom: 56px;
     padding-top: 0;
+    align-self: center;
 
     justify-self: center;
 
-    gap: 56px;
 
-    width: 30vw;
+    width: 20vw;
 }
 
 dialog[open] {
@@ -110,8 +121,14 @@ dialog[open] {
     width: 700px;
     max-width: 80vw;
 
-    height: 700px;
-    max-height: 65vh;
+    max-height: 700px;
+    max-height: 70vh;
+
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
 }
 
 dialog[open] header {
@@ -135,11 +152,11 @@ dialog[open] section {
 }
 
 dialog[open] section img {
-    width: 560px;
+    width: 100%;
+    max-width: 560px;
     height: 300px;
     object-fit: cover;
-
-    border: 0;
+    aspect-ratio: 16 / 9;
 }
 
 .dialog-arrow {
@@ -151,5 +168,7 @@ dialog[open] section img {
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
+
+    color: white;
 }
 
