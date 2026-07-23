@@ -8,4 +8,4 @@ function changeDialog(currentId, goalId){
 
     current.close();
     goal.showModal();
-}
+}  

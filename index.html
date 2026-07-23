@@ -47,9 +47,11 @@
 
     <main>
         <section class="photo-album">
-            <h1>Your personal photo album</h1>
+            <div>
+                <h1>Your personal photo album</h1>
+            </div>
 
-            
+            <div class="album-images">
             <!-- Bild 1/12 -->
                 <button onclick="document.getElementById('dialog-mountains').showModal()">
                     <img class="landingpage-image" src="./img/image-1.jpg" alt="Bild 1">
@@ -83,7 +85,7 @@
             
             <!-- Bild 2/12 -->
                 <button onclick="document.getElementById('dialog-snow').showModal()">
-                    <img class="landingpage-image" src="./img/image-2.jpg" alt="Bild 1">
+                    <img class="landingpage-image" src="./img/image-2.jpg" alt="Bild 2">
                 </button>
                 
                 <dialog class="dialog" id="dialog-snow">
@@ -105,11 +107,228 @@
                             <img class="dialog-arrow" src="./img/arrow-left.png" alt="arrow-left">
                         </button>
                         <p class="image-number">2/12</p>
+                        <button onclick="changeDialog('dialog-snow', 'dialog-cows')">
+                            <img class="dialog-arrow" src="./img/arrow-right.png" alt="arrow-right">
+                        </button>
+                    </footer>
+                </dialog> 
+                
+                
+                <!-- Bild 3/12 -->
+                <button onclick="document.getElementById('dialog-cows').showModal()">
+                    <img class="landingpage-image" src="./img/image-3.jpg" alt="Bild 3">
+                </button>
+                
+                <dialog class="dialog" id="dialog-cows">
+                    <header>
+                        <h2>Beautiful Cows</h2>
+                        <form method="dialog">
+                            <button onclick="closeDialog()">
+                            <img class="dialog-img" src="./img/close-dialog.png" alt="dialog close">  
+                            </button>
+                        </form>
+                    </header>
+                        
+                    <section>
+                        <img src="./img/image-3.jpg" alt="Bild 3">
+                    </section>
+
+                    <footer class="dialog-footer">
+                        <button onclick="changeDialog('dialog-cows', 'dialog-snow')">
+                            <img class="dialog-arrow" src="./img/arrow-left.png" alt="arrow-left">
+                        </button>
+                        <p class="image-number">3/12</p>
+                        <button onclick="changeDialog('dialog-cows', 'dialog-jungle')">
+                            <img class="dialog-arrow" src="./img/arrow-right.png" alt="arrow-right">
+                        </button>
+                    </footer>
+                </dialog>
+
+
+                <!-- Bild 4/12 -->
+                <button onclick="document.getElementById('dialog-jungle').showModal()">
+                    <img class="landingpage-image" src="./img/image-4.jpg" alt="Bild 4">
+                </button>
+                
+                <dialog class="dialog" id="dialog-jungle">
+                    <header>
+                        <h2>Beautiful Jungle</h2>
+                        <form method="dialog">
+                            <button onclick="closeDialog()">
+                            <img class="dialog-img" src="./img/close-dialog.png" alt="dialog close">  
+                            </button>
+                        </form>
+                    </header>
+                        
+                    <section>
+                        <img src="./img/image-4.jpg" alt="Bild 4">
+                    </section>
+
+                    <footer class="dialog-footer">
+                        <button onclick="changeDialog('dialog-jungle', 'dialog-cows')">
+                            <img class="dialog-arrow" src="./img/arrow-left.png" alt="arrow-left">
+                        </button>
+                        <p class="image-number">4/12</p>
+                        <button onclick="changeDialog('dialog-jungle', 'dialog-cats')">
+                            <img class="dialog-arrow" src="./img/arrow-right.png" alt="arrow-right">
+                        </button>
+                    </footer>
+                </dialog>
+
+
+                <!-- Bild 5/12 -->
+                <button onclick="document.getElementById('dialog-cats').showModal()">
+                    <img class="landingpage-image" src="./img/image-5.jpg" alt="Bild 5">
+                </button>
+                
+                <dialog class="dialog" id="dialog-cats">
+                    <header>
+                        <h2>Beautiful Cats</h2>
+                        <form method="dialog">
+                            <button onclick="closeDialog()">
+                            <img class="dialog-img" src="./img/close-dialog.png" alt="dialog close">  
+                            </button>
+                        </form>
+                    </header>
+                        
+                    <section>
+                        <img src="./img/image-5.jpg" alt="Bild 5">
+                    </section>
+
+                    <footer class="dialog-footer">
+                        <button onclick="changeDialog('dialog-cats', 'dialog-jungle')">
+                            <img class="dialog-arrow" src="./img/arrow-left.png" alt="arrow-left">
+                        </button>
+                        <p class="image-number">5/12</p>
+                        <button onclick="changeDialog('dialog-cats', 'dialog-desert')">
+                            <img class="dialog-arrow" src="./img/arrow-right.png" alt="arrow-right">
+                        </button>
+                    </footer>
+                </dialog>
+
+
+                <!-- Bild 6/12 -->
+                <button onclick="document.getElementById('dialog-desert').showModal()">
+                    <img class="landingpage-image" src="./img/image-6.jpg" alt="Bild 6">
+                </button>
+                
+                <dialog class="dialog" id="dialog-desert">
+                    <header>
+                        <h2>Beautiful Desert</h2>
+                        <form method="dialog">
+                            <button onclick="closeDialog()">
+                            <img class="dialog-img" src="./img/close-dialog.png" alt="dialog close">  
+                            </button>
+                        </form>
+                    </header>
+                        
+                    <section>
+                        <img src="./img/image-6.jpg" alt="Bild 6">
+                    </section>
+
+                    <footer class="dialog-footer">
+                        <button onclick="changeDialog('dialog-desert', 'dialog-cats')">
+                            <img class="dialog-arrow" src="./img/arrow-left.png" alt="arrow-left">
+                        </button>
+                        <p class="image-number">6/12</p>
+                        <button onclick="changeDialog('dialog-desert', 'dialog-dog')">
+                            <img class="dialog-arrow" src="./img/arrow-right.png" alt="arrow-right">
+                        </button>
+                    </footer>
+                </dialog>
+
+                <!-- Bild 7/12 -->
+                <button onclick="document.getElementById('dialog-desert').showModal()">
+                    <img class="landingpage-image" src="./img/image-7.jpg" alt="Bild 7">
+                </button>
+                
+                <dialog class="dialog" id="dialog-dog">
+                    <header>
+                        <h2>Beautiful Dog</h2>
+                        <form method="dialog">
+                            <button onclick="closeDialog()">
+                            <img class="dialog-img" src="./img/close-dialog.png" alt="dialog close">  
+                            </button>
+                        </form>
+                    </header>
+                        
+                    <section>
+                        <img src="./img/image-7.jpg" alt="Bild 7">
+                    </section>
+
+                    <footer class="dialog-footer">
+                        <button onclick="changeDialog('dialog-dog', 'dialog-desert')">
+                            <img class="dialog-arrow" src="./img/arrow-left.png" alt="arrow-left">
+                        </button>
+                        <p class="image-number">7/12</p>
+                        <button onclick="changeDialog('dialog-dog', 'dialog-beach')">
+                            <img class="dialog-arrow" src="./img/arrow-right.png" alt="arrow-right">
+                        </button>
+                    </footer>
+                </dialog>
+
+
+                <!-- Bild 8/12 -->
+                <button onclick="document.getElementById('dialog-beach').showModal()">
+                    <img class="landingpage-image" src="./img/image-8.jpg" alt="Bild 8">
+                </button>
+                
+                <dialog class="dialog" id="dialog-beach">
+                    <header>
+                        <h2>Beautiful Beach</h2>
+                        <form method="dialog">
+                            <button onclick="closeDialog()">
+                            <img class="dialog-img" src="./img/close-dialog.png" alt="dialog close">  
+                            </button>
+                        </form>
+                    </header>
+                        
+                    <section>
+                        <img src="./img/image-8.jpg" alt="Bild 8">
+                    </section>
+
+                    <footer class="dialog-footer">
+                        <button onclick="changeDialog('dialog-beach', 'dialog-dog')">
+                            <img class="dialog-arrow" src="./img/arrow-left.png" alt="arrow-left">
+                        </button>
+                        <p class="image-number">8/12</p>
+                        <button onclick="changeDialog('dialog-beach', 'dialog-lions')">
+                            <img class="dialog-arrow" src="./img/arrow-right.png" alt="arrow-right">
+                        </button>
+                    </footer>
+                </dialog>
+
+                <!-- Bild 9/12 -->
+                <button onclick="document.getElementById('dialog-lions').showModal()">
+                    <img class="landingpage-image" src="./img/image-9.jpg" alt="Bild 9">
+                </button>
+                
+                <dialog class="dialog" id="dialog-lions">
+                    <header>
+                        <h2>Beautiful Lions</h2>
+                        <form method="dialog">
+                            <button onclick="closeDialog()">
+                            <img class="dialog-img" src="./img/close-dialog.png" alt="dialog close">  
+                            </button>
+                        </form>
+                    </header>
+                        
+                    <section>
+                        <img src="./img/image-9.jpg" alt="Bild 9">
+                    </section>
+
+                    <footer class="dialog-footer">
+                        <button onclick="changeDialog('dialog-lions', 'dialog-beach')">
+                            <img class="dialog-arrow" src="./img/arrow-left.png" alt="arrow-left">
+                        </button>
+                        <p class="image-number">9/12</p>
                         <button>
                             <img class="dialog-arrow" src="./img/arrow-right.png" alt="arrow-right">
                         </button>
                     </footer>
-                </dialog>                           
+                </dialog>
+
+            </div>
         </section>
     </main>
 

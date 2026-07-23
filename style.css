@@ -73,6 +73,14 @@ main button {
     aspect-ratio: 1 / 1;
 }
 
+.album-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -89,6 +97,10 @@ footer {
 }
 
 .photo-album {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 0px;
 }
 
