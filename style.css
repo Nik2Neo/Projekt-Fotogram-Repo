@@ -6,6 +6,8 @@ html, body {
     height: 100%;
 
     font-family: "Figtree", sans-serif;
+
+    background-color: #06171E;
 }
 
 header {
@@ -18,7 +20,7 @@ header {
 
 .header-inner {
     max-width: 1440px;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 main {
@@ -73,12 +75,19 @@ main button {
     aspect-ratio: 1 / 1;
 }
 
+.landingpage-image:hover {
+    border: 10px;
+}
+
 .album-images {
     display: flex;
     flex-wrap: wrap;
     margin-left: 100px;
     margin-right: 100px;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
 }
 
 footer {
@@ -94,6 +103,10 @@ footer {
     color: #99ACB3;
     font-size: 14px;
     font-weight: 400;
+
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+    border-top-style: inherit;
 }
 
 .photo-album {
