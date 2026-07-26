@@ -258,6 +258,7 @@ dialog[open] section img {
     .header-inner {
         display: flex;
         justify-content: center;
+        padding-left: 0;
     }
 
 
