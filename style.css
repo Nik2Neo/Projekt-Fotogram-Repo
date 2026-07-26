@@ -26,6 +26,7 @@ header {
 
 .header-inner {
     width: 1440px;
+    padding-left: 5%;
 }
 
 main {
@@ -65,6 +66,7 @@ footer {
     width: 100%;
 }
 
+
 /* Headlines */
 
 h1 {
@@ -86,6 +88,7 @@ h2 {
     padding-bottom: 48px;
 }
 
+
 /* Buttons */
 
 main button {
@@ -96,6 +99,7 @@ main button {
 button:focus {
     outline: 2px solid white;
 }
+
 
 /* Images */
 
@@ -128,12 +132,10 @@ button:focus {
 .album-images {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 100px;
-    margin-right: 100px;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: center; 
     align-items: center;
-    gap: 60px;
+    gap: 50px;
+    max-width: 1400px;
 }
 
 .album-first-row {
@@ -145,6 +147,7 @@ button:focus {
     display: flex;
     gap: 16px;
 }
+
 
 /* Dialog */
 
@@ -239,6 +242,15 @@ dialog[open] section img {
         text-align: center;
         margin-top: 40px;
     }
+    
+    footer {
+        margin-top: 40px;
+    }
+
+    footer svg {
+        width: 100px;
+        height: 24px;
+    }
 
 
     /* Header */
@@ -274,18 +286,6 @@ dialog[open] section img {
 
     .album-second-row {
         flex-direction: column;
-    }
-
-
-    /* Footer */
-
-    footer {
-        margin-top: 40px;
-    }
-
-    footer svg {
-        width: 100px;
-        height: 24px;
     }
 
 }
