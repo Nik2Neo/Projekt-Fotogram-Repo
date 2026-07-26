@@ -10,19 +10,22 @@ html, body {
     font-family: "Figtree", sans-serif;
 
     background-color: #06171E;
+    align-items: center;
+    width: 100%;
 }
 
 header {
     display: flex;
 
+    justify-content: center;
     background-color: #09212A;
     padding-top: 20px;
     padding-bottom: 20px;
+    width: 100%;
 }
 
 .header-inner {
-    max-width: 1440px;
-    margin-left: 10%;
+    width: 1440px;
 }
 
 main {
@@ -36,6 +39,8 @@ main {
     align-items: center;
 
     position: relative;
+
+    max-width: 1440px;
 
 }
 
@@ -56,6 +61,8 @@ footer {
     border-top-left-radius: 35%;
     border-top-right-radius: 35%;
     border-top-style: inherit;
+
+    width: 100%;
 }
 
 /* Headlines */
@@ -220,3 +227,65 @@ dialog[open] section img {
     color: white;
 }
 
+
+/* Responsive - Phone */
+
+@media(max-width: 600px) {
+
+    /* General */
+
+    main {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+
+    /* Header */
+
+    .header-inner {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* Headlines */
+
+    h1 {
+        font-size: 48px;
+        font-weight: 800;
+        overflow-wrap: anywhere;
+    }
+
+
+    /* Images */
+
+    .album-images {
+        gap: 16px;
+        margin-left: 0;
+        margin-right: 0;
+        
+        flex-direction: row;
+    }
+
+    .album-first-row {
+        flex-direction: column;
+    }
+
+    .album-second-row {
+        flex-direction: column;
+    }
+
+
+    /* Footer */
+
+    footer {
+        margin-top: 40px;
+    }
+
+    footer svg {
+        width: 100px;
+        height: 24px;
+    }
+
+}
