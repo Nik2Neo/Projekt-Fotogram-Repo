@@ -1,7 +1,3 @@
-function closeDialog(){
-    dialogRef.close();
-}
-
 function changeDialog(currentId, goalId){
     const current = document.getElementById(currentId);
     const goal = document.getElementById(goalId);
@@ -9,3 +5,5 @@ function changeDialog(currentId, goalId){
     current.close();
     goal.showModal();
 }  
+function closeDialog(){
+}
